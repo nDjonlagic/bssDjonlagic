@@ -1,0 +1,118 @@
+<!doctype html>
+<html class="no-js" lang="" style="height: 100%">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Blood pressure</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Discharge decision overview
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="_a.html">Overview "A"</a>
+            <a class="dropdown-item" href="_s.html">Overview "S"</a>
+            <a class="dropdown-item" href="_i.html">Overview "I"</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Blood pressure <> ICU</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="internal-temp.html">Internal temperature <> ICU</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="external-temp.html">External temperature <> ICU</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="oxygen.html">Oxygen level <> ICU</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <section class="container-fluid">
+
+      <!-- Main content and graphs -->
+        <div style="margin: 0 -15px">
+          <div class="content">
+            <div class="row">
+              <div class="col-md-12">
+            <div class="content-title">
+              <span class="content-hypothesis">Hypothesis</span>
+              High blood pressure makes the patient be transfered Intensive Care Unit
+            </div>
+            </div>
+            </div>
+
+            <div class="row">
+            <!-- ovde stvarni content -->
+            <div class="col">
+              <canvas id="myChart" width="400" height="100"></canvas>
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="content-conclusion">
+              <span class="content-hypothesis">Conclusion</span>
+              As shown on the graph above, patients with high blood pressure get transfered to the <b>General hospital floor</b> im more than 50% of the cases. Only approx. 3% of the patinets with High-blood pressure are being transfered to the Intensive care unit.
+                <br /><br />
+              A more general observation would be the fact that the blood pressure doesn't have a significat impact on the outcome and the decision on the transfer of patients, since only a little more than <b>2% (2.22%)</b> are being transfered to the intensive care no matter the blood pressure.
+            </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- Add your site or application content here -->
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="js/charts/index.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
