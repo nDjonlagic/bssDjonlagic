@@ -140,8 +140,8 @@ var internal = new Chart(internal_ctx, {
                 __totalData.lcore.high
             ],
             backgroundColor: [
-                '#0984e3',
-                '#55efc4',
+                '#00b894',
+                '#fff04d',
                 '#ff7675'
             ],
             label: 'Internal temperature'
@@ -168,8 +168,8 @@ var external = new Chart(external_ctx, {
                 __totalData.lsurf.high
             ],
             backgroundColor: [
-                '#0984e3',
                 '#00b894',
+                '#fff04d',
                 '#ff7675'
             ],
             label: 'External temperature'
@@ -196,8 +196,8 @@ var bp = new Chart(bp_ctx, {
                 __totalData.lbp.high
             ],
             backgroundColor: [
-                '#0984e3',
                 '#00b894',
+                '#fff04d',
                 '#ff7675'
             ],
             label: 'Blood pressure level'
@@ -225,10 +225,10 @@ var oxygen = new Chart(oxygen_ctx, {
                 __totalData.lo2.poor
             ],
             backgroundColor: [
-                '#0984e3',
                 '#00b894',
                 '#fdcb6e',
-                '#ff7675',
+                '#fff04d',
+                '#ff7675'
             ],
             label: 'Oxygen level'
         }],
@@ -255,9 +255,9 @@ var surfstbl = new Chart(surfstbl_ctx, {
                 __totalData.surfstbl.unstable
             ],
             backgroundColor: [
-                '#0984e3',
                 '#00b894',
-                '#ff7675',
+                '#fff04d',
+                '#ff7675'
             ],
             label: 'Surface temperature stability'
         }],
@@ -283,9 +283,9 @@ var bpstbl = new Chart(bpstbl_ctx, {
                 __totalData.bpstbl.unstable
             ],
             backgroundColor: [
-                '#0984e3',
                 '#00b894',
-                '#ff7675',
+                '#fff04d',
+                '#ff7675'
             ],
             label: 'Surface temperature stability'
         }],
@@ -311,9 +311,9 @@ var corestbl = new Chart(corestbl_ctx, {
                 __totalData.corestbl.unstable
             ],
             backgroundColor: [
-                '#0984e3',
                 '#00b894',
-                '#ff7675',
+                '#fff04d',
+                '#ff7675'
             ],
             label: 'Surface temperature stability'
         }],
