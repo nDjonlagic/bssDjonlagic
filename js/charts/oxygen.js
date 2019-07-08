@@ -111,22 +111,22 @@ let chartData = {
 			__totalData.poor.__data.i
         ]
     }, {
+        label: 'A - General hospital floor',
+        backgroundColor: '#fff04d',
+        data: [
+            __totalData.excellent.__data.a,
+            __totalData.good.__data.a,
+            __totalData.fair.__data.a,
+			__totalData.poor.__data.a
+        ]
+    },{
         label: 'S - Ready to go home',
         backgroundColor: '#00b894',
         data: [
             __totalData.excellent.__data.s,
             __totalData.good.__data.s,
             __totalData.fair.__data.s,
-			__totalData.poor.__data.s
-        ]
-    }, {
-        label: 'A - General hospital floor',
-        backgroundColor: '#0984e3',
-        data: [
-            __totalData.excellent.__data.a,
-            __totalData.good.__data.a,
-            __totalData.fair.__data.a,
-			__totalData.poor.__data.a
+            __totalData.poor.__data.s
         ]
     }]
 }

@@ -85,11 +85,19 @@ let chartData = {
     labels: ['Low', 'Medium', 'High'],
     datasets: [{
         label: 'I - Intensive care',
-        backgroundColor: '#ff7675',
+        backgroundColor: '#ff0000',
         data: [
             __totalData.low.__data.i,
             __totalData.medium.__data.i,
             __totalData.high.__data.i
+        ]
+    },{
+        label: 'A - General hospital floor',
+        backgroundColor: '#fff04d',
+        data: [
+            __totalData.low.__data.a,
+            __totalData.medium.__data.a,
+            __totalData.high.__data.a
         ]
     }, {
         label: 'S - Ready to go home',
@@ -98,14 +106,6 @@ let chartData = {
             __totalData.low.__data.s,
             __totalData.medium.__data.s,
             __totalData.high.__data.s
-        ]
-    }, {
-        label: 'A - General hospital floor',
-        backgroundColor: '#0984e3',
-        data: [
-            __totalData.low.__data.a,
-            __totalData.medium.__data.a,
-            __totalData.high.__data.a
         ]
     }]
 }
