@@ -27,34 +27,34 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html">Pocetna <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Discharge decision overview
+                      Odluka o otpustanju - pregled
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="_a.html">Overview "A"</a>
-                      <a class="dropdown-item" href="_s.html">Overview "S"</a>
-                      <a class="dropdown-item" href="_i.html">Overview "I"</a>
+                      <a class="dropdown-item" href="_a.html">Pregled "A"</a>
+                      <a class="dropdown-item" href="_s.html">Pregled "S"</a>
+                      <a class="dropdown-item" href="_i.html">Pregled "I"</a>
                   </div>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="index.html">Blood pressure <> ICU</a>
+                  <a class="nav-link" href="index.html">Krvni pritisak</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="internal-temp.html">Internal temperature <> ICU</a>
+                  <a class="nav-link" href="internal-temp.html">Unutarnja temperatura</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="external-temp.html">External temperature <> ICU</a>
+                  <a class="nav-link" href="external-temp.html">Spoljasnja temperatura</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="oxygen.html">Oxygen level <> ICU</a>
+                  <a class="nav-link" href="oxygen.html">Nivo kisika</a>
               </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              <input class="form-control mr-sm-2" type="search" placeholder="Pretraga" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pretraga</button>
           </form>
       </div>
   </nav>
@@ -64,21 +64,21 @@
         <div style="margin: 0 -15px;">
           <div class="content">
             <div class="content-title">
-              <span class="content-hypothesis">Overview</span>
-              All related paramters for patient sent to general hospital floor 
+              <span class="content-hypothesis">Pregled</span>
+                Svi relevantni parametri za slanje pacijenta na odjel opce medicine
             </div>
 
             <!-- ovde stvarni content -->
             <div class="row">
                 <div class="col-md-6 col-sm-12" style="text-align: center;">
-                    <span class="content-hypothesis" style="margin-bottom: 15px;">Internal temperature</span>
+                    <span class="content-hypothesis" style="margin-bottom: 15px;">Unutarnja tjelesna temperatura</span>
                         <hr />
                     <canvas id="internal" height="100"></canvas>
                         <hr />
                 </div>
 
                 <div class="col-md-6 col-sm-12" style="text-align: center;">
-                    <span class="content-hypothesis" style="margin-bottom: 15px;">External temperature</span>
+                    <span class="content-hypothesis" style="margin-bottom: 15px;">Spoljasnja tjelesna temperatura</span>
                         <hr />
                     <canvas id="external" height="100"></canvas>
                         <hr />
@@ -89,14 +89,14 @@
 
             <div class="row">
                 <div class="col-md-6 col-sm-12" style="text-align: center;">
-                    <span class="content-hypothesis" style="margin-bottom: 15px;">Oxygen</span>
+                    <span class="content-hypothesis" style="margin-bottom: 15px;">Kiseonik</span>
                         <hr />
                     <canvas id="oxygen" height="100"></canvas>
                         <hr />
                 </div>
 
                 <div class="col-md-6 col-sm-12" style="text-align: center;">
-                    <span class="content-hypothesis" style="margin-bottom: 15px;">Blood presure</span>
+                    <span class="content-hypothesis" style="margin-bottom: 15px;">Krvni pritisak</span>
                         <hr />
                     <canvas id="bp" height="100"></canvas>
                         <hr />
@@ -107,21 +107,21 @@
 
             <div class="row">
                 <div class="col-md-4 col-sm-12" style="text-align: center;">
-                    <span class="content-hypothesis" style="margin-bottom: 15px;">stability of patient's surface temperature</span>
+                    <span class="content-hypothesis" style="margin-bottom: 15px;">stabilnost povrsinske temperature pacijenta</span>
                         <hr />
                     <canvas id="surfstbl" height="100"></canvas>
                         <hr />
                 </div>
 
                 <div class="col-md-4 col-sm-12" style="text-align: center;">
-                    <span class="content-hypothesis" style="margin-bottom: 15px;">stability of patient's core temperature</span>
+                    <span class="content-hypothesis" style="margin-bottom: 15px;">stabilnost unutarnje temperature pacijenta</span>
                         <hr />
                     <canvas id="corestbl" height="100"></canvas>
                         <hr />
                 </div>
 
                 <div class="col-md-4 col-sm-12" style="text-align: center;">
-                    <span class="content-hypothesis" style="margin-bottom: 15px;">stability of patient's blood pressure</span>
+                    <span class="content-hypothesis" style="margin-bottom: 15px;">stabilnost krvnog pritiska pacijenta</span>
                         <hr />
                     <canvas id="bpstbl" height="100"></canvas>
                         <hr />

@@ -100,9 +100,9 @@ console.log(__totalData)
 
 // preparing the chart data
 let chartData = {
-    labels: ['Excellent', 'Good', 'Fair', 'Poor'],
+    labels: ['Odlicno', 'Dobro', 'Zadovoljavajuce', 'Lose'],
     datasets: [{
-        label: 'I - Intensive care',
+        label: 'I - Intenzivna njega',
         backgroundColor: '#ff7675',
         data: [
             __totalData.excellent.__data.i,
@@ -111,7 +111,7 @@ let chartData = {
 			__totalData.poor.__data.i
         ]
     }, {
-        label: 'A - General hospital floor',
+        label: 'A - Odjel opce medicine',
         backgroundColor: '#fff04d',
         data: [
             __totalData.excellent.__data.a,
@@ -120,7 +120,7 @@ let chartData = {
 			__totalData.poor.__data.a
         ]
     },{
-        label: 'S - Ready to go home',
+        label: 'S - Spremni za odlazak kuci',
         backgroundColor: '#00b894',
         data: [
             __totalData.excellent.__data.s,
