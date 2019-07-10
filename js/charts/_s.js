@@ -119,6 +119,7 @@ for(let i = 0; i < __total; i++) {
         } else if(data[i].bpstbl == "unstable") {
             __totalData.bpstbl.unstable++
         } else {
+            console.log("TEST ",__totalData.bpstbl.mod)
             __totalData.bpstbl.mod++
         }  
     }
@@ -140,16 +141,16 @@ var internal = new Chart(internal_ctx, {
                 __totalData.lcore.high
             ],
             backgroundColor: [
+                '#84C0F2',
                 '#00b894',
-                '#fff04d',
                 '#ff7675'
             ],
             label: 'Internal temperature'
         }],
         labels: [
-            'Low',
-            'Medium',
-            'High'
+            'Niska',
+            'Normalna',
+            'Visoka'
         ]
     },
     options: {
@@ -168,16 +169,16 @@ var external = new Chart(external_ctx, {
                 __totalData.lsurf.high
             ],
             backgroundColor: [
+                '#84C0F2',
                 '#00b894',
-                '#fff04d',
                 '#ff7675'
             ],
             label: 'External temperature'
         }],
         labels: [
-            'Low',
-            'Medium',
-            'High'
+            'Niska',
+            'Normalna',
+            'Visoka'
         ]
     },
     options: {
@@ -196,16 +197,16 @@ var bp = new Chart(bp_ctx, {
                 __totalData.lbp.high
             ],
             backgroundColor: [
+                '#84C0F2',
                 '#00b894',
-                '#fff04d',
                 '#ff7675'
             ],
             label: 'Blood pressure level'
         }],
         labels: [
-            'Low',
-            'Medium',
-            'High'
+            'Nizak',
+            'Normalan',
+            'Visok'
         ]
     },
     options: {
@@ -233,10 +234,10 @@ var oxygen = new Chart(oxygen_ctx, {
             label: 'Oxygen level'
         }],
         labels: [
-            'Excellent',
-            'Good',
-            'Fair',
-            'Poor'
+            'Odlican',
+            'Dobar',
+            'Zadovoljavajuci',
+            'Los'
         ]
     },
     options: {
@@ -250,8 +251,8 @@ var surfstbl = new Chart(surfstbl_ctx, {
     data: {
         datasets: [{
             data: [
-                __totalData.surfstbl.mod,
                 __totalData.surfstbl.stable,
+                __totalData.surfstbl.mod,
                 __totalData.surfstbl.unstable
             ],
             backgroundColor: [
@@ -262,9 +263,9 @@ var surfstbl = new Chart(surfstbl_ctx, {
             label: 'Surface temperature stability'
         }],
         labels: [
-            'Mod-stable',
-            'Stable',
-            'Unstable'
+            'Stabilno',
+            'Polustabilno',
+            'Nestabilno'
         ]
     },
     options: {
@@ -278,8 +279,8 @@ var bpstbl = new Chart(bpstbl_ctx, {
     data: {
         datasets: [{
             data: [
-                __totalData.bpstbl.mod,
                 __totalData.bpstbl.stable,
+                __totalData.bpstbl.mod,
                 __totalData.bpstbl.unstable
             ],
             backgroundColor: [
@@ -290,9 +291,9 @@ var bpstbl = new Chart(bpstbl_ctx, {
             label: 'Surface temperature stability'
         }],
         labels: [
-            'Mod-stable',
-            'Stable',
-            'Unstable'
+            'Stabilno',
+            'Polustabilno',
+            'Nestabilno'
         ]
     },
     options: {
@@ -306,8 +307,8 @@ var corestbl = new Chart(corestbl_ctx, {
     data: {
         datasets: [{
             data: [
-                __totalData.corestbl.mod,
                 __totalData.corestbl.stable,
+                __totalData.corestbl.mod,
                 __totalData.corestbl.unstable
             ],
             backgroundColor: [
@@ -318,9 +319,9 @@ var corestbl = new Chart(corestbl_ctx, {
             label: 'Surface temperature stability'
         }],
         labels: [
-            'Mod-stable',
-            'Stable',
-            'Unstable'
+            'Stabilno',
+            'Polustabilno',
+            'Nestabilno'
         ]
     },
     options: {

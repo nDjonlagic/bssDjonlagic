@@ -4,13 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Overview I</title>
+  <title>Pregled "I"</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/normalize.css">
@@ -70,43 +66,49 @@
             </div>
 
             <!-- ovde stvarni content -->
-            <div class="row">
-                <div class="col-md-6 col-sm-12" style="text-align: center;">
-                    <span class="content-hypothesis" style="margin-bottom: 15px;">Unutarnja tjelesna temperatura</span>
-                        <hr />
-                    <canvas id="internal" height="100"></canvas>
-                        <hr />
-                </div>
+              <div class="row">
 
-                <div class="col-md-6 col-sm-12" style="text-align: center;">
-                    <span class="content-hypothesis" style="margin-bottom: 15px;">Vanjska tjelesna temperatura</span>
-                        <hr />
-                    <canvas id="external" height="100"></canvas>
-                        <hr />
-                </div>
+                  <div class="col-md-6 col-sm-12" style="text-align: center;">
+                      <span class="content-hypothesis" style="margin-bottom: 15px;">Krvni pritisak</span>
+                      <hr />
+                      <canvas id="bp" height="100"></canvas>
+                      <hr />
+                  </div>
 
-                
-            </div>
+                  <div class="col-md-6 col-sm-12" style="text-align: center;">
+                      <span class="content-hypothesis" style="margin-bottom: 15px;">Unutarnja tjelesna temperatura</span>
+                      <hr />
+                      <canvas id="internal" height="100"></canvas>
+                      <hr />
+                  </div>
+              </div>
 
-            <div class="row">
-                <div class="col-md-6 col-sm-12" style="text-align: center;">
-                    <span class="content-hypothesis" style="margin-bottom: 15px;">Kiseonik</span>
-                        <hr />
-                    <canvas id="oxygen" height="100"></canvas>
-                        <hr />
-                </div>
+              <div class="row">
+                  <div class="col-md-6 col-sm-12" style="text-align: center;">
+                      <span class="content-hypothesis" style="margin-bottom: 15px;">Spoljasnja tjelesna temperatura</span>
+                      <hr />
+                      <canvas id="external" height="100"></canvas>
+                      <hr />
+                  </div>
 
-                <div class="col-md-6 col-sm-12" style="text-align: center;">
-                    <span class="content-hypothesis" style="margin-bottom: 15px;">Krvni pritisak</span>
-                        <hr />
-                    <canvas id="bp" height="100"></canvas>
-                        <hr />
-                </div>
+                  <div class="col-md-6 col-sm-12" style="text-align: center;">
+                      <span class="content-hypothesis" style="margin-bottom: 15px;">Kiseonik</span>
+                      <hr />
+                      <canvas id="oxygen" height="100"></canvas>
+                      <hr />
+                  </div>
 
-                <hr />
-            </div>
+              </div>
 
             <div class="row">
+
+                <div class="col-md-4 col-sm-12" style="text-align: center;">
+                    <span class="content-hypothesis" style="margin-bottom: 15px;">stabilnost krvog pritiska pacijenta</span>
+                    <hr />
+                    <canvas id="bpstbl" height="100"></canvas>
+                    <hr />
+                </div>
+
                 <div class="col-md-4 col-sm-12" style="text-align: center;">
                     <span class="content-hypothesis" style="margin-bottom: 15px;">stabilnost povrsinske temperature pacijenta</span>
                         <hr />
@@ -121,12 +123,7 @@
                         <hr />
                 </div>
 
-                <div class="col-md-4 col-sm-12" style="text-align: center;">
-                    <span class="content-hypothesis" style="margin-bottom: 15px;">stabilnost krvog pritiska pacijenta</span>
-                        <hr />
-                    <canvas id="bpstbl" height="100"></canvas>
-                        <hr />
-                </div>
+
             </div>
           </div>
         </div>
